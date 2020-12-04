@@ -7,6 +7,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.adventcalendar2020.R
@@ -55,18 +56,18 @@ class GiftRvAdapter : RecyclerView.Adapter<GiftRvAdapter.SingleViewHolder>() {
                 }
 
 
-            /*    if (notAvailableDay(day)){
+               if (notAvailableDay(day)){
                     cardView.setBackgroundColor(ContextCompat.getColor(context,R.color.light_grey))
                     cardView.setOnClickListener {
                        Toast.makeText(context,"rendez-vous le ${dateSubstring} pour découvrir votre cadeau !",Toast.LENGTH_LONG).show()
                     }
-                }else {*/
+                }else {
                     cardView.setBackgroundColor(ContextCompat.getColor(context,android.R.color.white))
                     cardView.setOnClickListener {
                         showDialog(context,day,adapterPosition)
 
                     }
-                //}
+               }
             }
 
         }
