@@ -22,5 +22,5 @@ Kotlin / Xml
 
 Room
 
-
+Dans le dossier APK vous retrouverez le fichier APK avec lequel vous pouvez installer l'application directement sur votre machine android.
 
